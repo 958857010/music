@@ -18,11 +18,33 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class UserIntegral extends BaseEntity {
 
-    private static final long serialVersionUID = 1L;
+    private int id;
 
     private Integer integral;
 
     private Integer uid;
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Integer getIntegral() {
+        return integral;
+    }
+
+    public void setIntegral(Integer integral) {
+        this.integral = integral;
+    }
+
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
 }

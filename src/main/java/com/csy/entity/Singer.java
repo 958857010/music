@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-import java.time.LocalDateTime;
-
 /**
  * <p>
  * 
@@ -18,13 +16,13 @@ import java.time.LocalDateTime;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-public class UserSignin extends BaseEntity {
+public class Singer extends BaseEntity {
 
     private int id;
 
-    private Integer uid;
+    private String singerName;
 
-    private LocalDateTime signintime;
+    private String sImgurl;
 
     public int getId() {
         return id;
@@ -34,19 +32,19 @@ public class UserSignin extends BaseEntity {
         this.id = id;
     }
 
-    public Integer getUid() {
-        return uid;
+    public String getSingerName() {
+        return singerName;
     }
 
-    public void setUid(Integer uid) {
-        this.uid = uid;
+    public void setSingerName(String singerName) {
+        this.singerName = singerName;
     }
 
-    public LocalDateTime getSignintime() {
-        return signintime;
+    public String getsImgurl() {
+        return sImgurl;
     }
 
-    public void setSignintime(LocalDateTime signintime) {
-        this.signintime = signintime;
+    public void setsImgurl(String sImgurl) {
+        this.sImgurl = sImgurl;
     }
 }

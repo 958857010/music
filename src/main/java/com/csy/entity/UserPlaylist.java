@@ -18,11 +18,33 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class UserPlaylist extends BaseEntity {
 
-    private static final long serialVersionUID = 1L;
+    private int id;
 
     private Integer uid;
 
     private String playlistName;
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
+
+    public String getPlaylistName() {
+        return playlistName;
+    }
+
+    public void setPlaylistName(String playlistName) {
+        this.playlistName = playlistName;
+    }
 }

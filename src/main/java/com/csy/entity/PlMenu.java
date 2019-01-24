@@ -18,11 +18,33 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class PlMenu extends BaseEntity {
 
-    private static final long serialVersionUID = 1L;
+    private int id;
 
     private Integer mid;
 
     private Integer pid;
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Integer getMid() {
+        return mid;
+    }
+
+    public void setMid(Integer mid) {
+        this.mid = mid;
+    }
+
+    public Integer getPid() {
+        return pid;
+    }
+
+    public void setPid(Integer pid) {
+        this.pid = pid;
+    }
 }

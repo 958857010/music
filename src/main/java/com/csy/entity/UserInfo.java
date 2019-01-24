@@ -18,7 +18,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class UserInfo extends BaseEntity {
 
-    private static final long serialVersionUID = 1L;
+    private int id;
 
     private String uName;
 
@@ -36,5 +36,75 @@ public class UserInfo extends BaseEntity {
 
     private String uIntro;
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getuName() {
+        return uName;
+    }
+
+    public void setuName(String uName) {
+        this.uName = uName;
+    }
+
+    public Integer getuSex() {
+        return uSex;
+    }
+
+    public void setuSex(Integer uSex) {
+        this.uSex = uSex;
+    }
+
+    public String getuPhone() {
+        return uPhone;
+    }
+
+    public void setuPhone(String uPhone) {
+        this.uPhone = uPhone;
+    }
+
+    public String getuImgurl() {
+        return uImgurl;
+    }
+
+    public void setuImgurl(String uImgurl) {
+        this.uImgurl = uImgurl;
+    }
+
+    public Integer getiId() {
+        return iId;
+    }
+
+    public void setiId(Integer iId) {
+        this.iId = iId;
+    }
+
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
+
+    public Integer getuTime() {
+        return uTime;
+    }
+
+    public void setuTime(Integer uTime) {
+        this.uTime = uTime;
+    }
+
+    public String getuIntro() {
+        return uIntro;
+    }
+
+    public void setuIntro(String uIntro) {
+        this.uIntro = uIntro;
+    }
 }
