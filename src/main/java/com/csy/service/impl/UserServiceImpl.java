@@ -3,8 +3,12 @@ package com.csy.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.csy.constant.SystemConst;
+import com.csy.dao.UserInfoMapper;
+import com.csy.dao.UserIntegralMapper;
 import com.csy.entity.User;
 import com.csy.dao.UserMapper;
+import com.csy.entity.UserInfo;
+import com.csy.entity.UserIntegral;
 import com.csy.service.UserService;
 import com.csy.utils.JedisUtil;
 import com.csy.utils.ResultUtil;
@@ -25,6 +29,10 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private UserInfoMapper userInfoMapper;
+    @Autowired
+    private UserIntegralMapper userIntegralMapper;
 
     @Autowired
     private JedisUtil jedisUtil;
@@ -32,6 +40,19 @@ public class UserServiceImpl implements UserService {
     //注册
     @Override
     public ResultVo save(User user) {
+        UserInfo userInfo = new UserInfo();
+        UserIntegral userIntegral = new UserIntegral();
+        if (userMapper.insert(user) > 0){
+            int id = user.getId();
+            userInfo.setUid(id);
+            userInfo.setuName(user.getUserId());
+            userInfo.setuSex(0);
+            //添加用户信息表
+            userInfoMapper.insert(userInfo);
+            userIntegral.setIntegral(0);
+            //添加用户积分表
+            userIntegralMapper.insert(userIntegral);
+        }
         return ResultUtil.exec(userMapper.insert(user),user);
     }
 

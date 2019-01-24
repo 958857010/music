@@ -1,18 +1,17 @@
 package com.csy.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.csy.entity.UserIntegral;
+import com.csy.entity.Forcus;
+
 
 /**
  * <p>
  *  Mapper 接口
  * </p>
  *
- * @author shawn
+ * @author Jin
  * @since 2019-01-24
  */
-public interface UserIntegralMapper extends BaseMapper<UserIntegral> {
-
-
+public interface ForcusMapper extends BaseMapper<Forcus> {
 
 }

@@ -1,18 +1,17 @@
 package com.csy.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.csy.entity.UserIntegral;
+import com.csy.entity.Collect;
+
 
 /**
  * <p>
  *  Mapper 接口
  * </p>
  *
- * @author shawn
+ * @author Jin
  * @since 2019-01-24
  */
-public interface UserIntegralMapper extends BaseMapper<UserIntegral> {
-
-
+public interface CollectMapper extends BaseMapper<Collect> {
 
 }

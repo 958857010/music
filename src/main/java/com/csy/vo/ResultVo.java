@@ -60,4 +60,17 @@ public class ResultVo implements Serializable {
     public void setData(Object data) {
         this.data = data;
     }
+    public static ResultVo setOK(Object data) {
+        ResultVo rvo=new ResultVo();
+        rvo.setCode(0);
+        rvo.setMsg("OK");
+        rvo.setData(data);
+        return rvo;
+    }
+    public static ResultVo setERROR() {
+        ResultVo rvo=new ResultVo();
+        rvo.setCode(1);
+        rvo.setMsg("ERROR");
+        return rvo;
+    }
 }

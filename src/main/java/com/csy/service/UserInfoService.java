@@ -2,6 +2,7 @@ package com.csy.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.csy.entity.UserInfo;
+import com.csy.vo.ResultVo;
 
 /**
  * <p>
@@ -12,5 +13,9 @@ import com.csy.entity.UserInfo;
  * @since 2019-01-24
  */
 public interface UserInfoService {
+
+     ResultVo selectInfoByid(int id);
+
+     ResultVo updateUserInfo(UserInfo userInfo);
 
 }
