@@ -1,8 +1,7 @@
 package com.csy.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.csy.entity.UserPlaylist;
-
+import com.csy.entity.UserInfo;
 
 /**
  * <p>
@@ -12,6 +11,6 @@ import com.csy.entity.UserPlaylist;
  * @author shawn
  * @since 2019-01-24
  */
-public interface IUserPlaylistService extends IService<UserPlaylist> {
+public interface UserInfoService {
 
 }

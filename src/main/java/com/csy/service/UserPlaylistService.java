@@ -1,7 +1,8 @@
 package com.csy.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.csy.entity.PlMenu;
+import com.csy.entity.UserPlaylist;
+
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.csy.entity.PlMenu;
  * @author shawn
  * @since 2019-01-24
  */
-public interface IPlMenuService extends IService<PlMenu> {
+public interface UserPlaylistService {
 
 }

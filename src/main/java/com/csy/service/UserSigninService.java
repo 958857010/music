@@ -1,8 +1,7 @@
 package com.csy.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.csy.entity.UserIntegral;
-
+import com.csy.entity.UserSignin;
 
 /**
  * <p>
@@ -12,6 +11,6 @@ import com.csy.entity.UserIntegral;
  * @author shawn
  * @since 2019-01-24
  */
-public interface IUserIntegralService extends IService<UserIntegral> {
+public interface UserSigninService {
 
 }

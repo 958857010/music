@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.csy.dao.PlMenuMapper;
 import com.csy.entity.PlMenu;
 
-import com.csy.service.IPlMenuService;
+import com.csy.service.PlMenuService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,6 +16,6 @@ import org.springframework.stereotype.Service;
  * @since 2019-01-24
  */
 @Service
-public class PlMenuServiceImpl extends ServiceImpl<PlMenuMapper, PlMenu> implements IPlMenuService {
+public class PlMenuServiceImpl extends ServiceImpl<PlMenuMapper, PlMenu> implements PlMenuService {
 
 }
